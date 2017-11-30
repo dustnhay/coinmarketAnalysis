@@ -1,0 +1,8 @@
+git clone
+git status
+git add <filename>. //add the file to the repository
+  git add -A   //adds all commits
+git commit -m <comment> //still in the repository but not in th github.com
+git push  //pushes it to the cloud
+git pull
+git help  //gives all the options
