@@ -1,3 +1,5 @@
+#http://tiborsimko.org/postgresql-mongodb-json-select-speed.html
+
 import requests
 import json
 from pymongo import MongoClient
