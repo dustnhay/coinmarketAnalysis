@@ -1,0 +1,29 @@
+[
+    {
+        "id": "bitcoin",
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "athhigh_btc":"",
+        "athigh_btc_epoc":"",
+        "athigh_usd":"",
+        "athigh_usd_epoc":"",
+        "atlow_btc":"",
+        "atlow_btc_epoc":"",
+        "atlow_usd":"",
+        "atlow_usd_epoc":""
+    },
+    {
+        "id": "ethereum",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "athhigh_btc":"",
+        "athigh_btc_epoc":"",
+        "athigh_usd":"",
+        "athigh_usd_epoc":"",
+        "atlow_btc":"",
+        "atlow_btc_epoc":"",
+        "atlow_usd":"",
+        "atlow_usd_epoc":""
+    },
+    
+] 
