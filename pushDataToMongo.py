@@ -1,5 +1,6 @@
 #pip install pymongo
 #pip install schedule
+#mongoimport --host ds127126.mlab.com:27126 --db mountain --collection coinMarketCap -u germ -p blueelephant --type json --jsonArray --file /Users/devendra_behera/mygit/coinmarketAnalysis/coin_data_sample.json
 import requests
 import time
 from datetime import datetime
