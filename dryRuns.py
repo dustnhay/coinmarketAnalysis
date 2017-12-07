@@ -3,14 +3,23 @@
 import requests
 import json
 from pymongo import MongoClient
+client = MongoClient("mongodb://germ:blueelephant@ds127126.mlab.com:27126/mountain")
+db = client.mountain
+currentPrices = {}
+all_coins_data = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=600").json()
+for item in all_coins_data:
+		currentPrices[item["id"]]=item["price_usd"]
+print currentPrices
+		#db.coinMarketCap.insert(item)
 #curl_output = curl("https://api.coinmarketcap.com/v1/ticker/?limit=0")
 #print type(curl_output)
-all_coins_data =  requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=0").json()
+#all_coins_data =  requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=0").json()
 #print type (all_coins_data)
-print all_coins_data[1]
+#print all_coins_data[0]
 #json_obj_array= all_coins_data.json
-
-
+#x=db.allTimeData.find({},{"athigh_usd":1})
+#for doc in x:
+# print doc['_id'], doc['athigh_usd']
 """x = '''
     {
         "id": "bitcoin", 
@@ -48,8 +57,8 @@ print all_coins_data[1]
     }
     '''
 print x
-"""
-client = MongoClient("mongodb://germ:blueelephant@ds127126.mlab.com:27126/mountain")
+
+
 db = client.mountain
 db.coinMarketCap.insert([])
 x = db.coinMarketCap.find()

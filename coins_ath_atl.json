@@ -1,11 +1,12 @@
 [
     {
-        "id": "bitcoin",
+        "_id": "bitcoin",
         "name": "Bitcoin",
         "symbol": "BTC",
-        "athhigh_btc":"",
+        "rank" : "1",
+        "athhigh_btc":"1",
         "athigh_btc_epoc":"",
-        "athigh_usd":"",
+        "athigh_usd":"15971.00",
         "athigh_usd_epoc":"",
         "atlow_btc":"",
         "atlow_btc_epoc":"",
@@ -13,17 +14,45 @@
         "atlow_usd_epoc":""
     },
     {
-        "id": "ethereum",
+        "_id": "ethereum",
         "name": "Ethereum",
         "symbol": "ETH",
+        "rank" : "2",
         "athhigh_btc":"",
         "athigh_btc_epoc":"",
-        "athigh_usd":"",
+        "athigh_usd":"480",
         "athigh_usd_epoc":"",
         "atlow_btc":"",
         "atlow_btc_epoc":"",
         "atlow_usd":"",
         "atlow_usd_epoc":""
     },
-    
+    {
+    	"_id" : "bitcoin-cash",
+		"name" : "Bitcoin Cash",
+		"symbol" : "BCH",
+		"rank" : "3",
+		"athhigh_btc":"",
+        "athigh_btc_epoc":"",
+        "athigh_usd":"2800.00",
+        "athigh_usd_epoc":"",
+        "atlow_btc":"",
+        "atlow_btc_epoc":"",
+        "atlow_usd":"",
+        "atlow_usd_epoc":""
+    },
+    {	
+		"_id" : "ripple",
+		"name" : "Ripple",
+		"symbol" : "XRP",
+		"rank" : "4",
+    	"athhigh_btc":"",
+        "athigh_btc_epoc":"",
+        "athigh_usd":"00.40",
+        "athigh_usd_epoc":"",
+        "atlow_btc":"",
+        "atlow_btc_epoc":"",
+        "atlow_usd":"",
+        "atlow_usd_epoc":""
+    }
 ] 
