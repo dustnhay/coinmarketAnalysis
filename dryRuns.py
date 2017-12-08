@@ -8,8 +8,9 @@ db = client.mountain
 currentPrices = {}
 all_coins_data = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=600").json()
 for item in all_coins_data:
-		currentPrices[item["id"]]=item["price_usd"]
-print currentPrices
+		print item["id"], "0.00"
+		#currentPrices[item["id"]]=item["price_usd"]
+#print currentPrices
 
 		#db.coinMarketCap.insert(item)
 #curl_output = curl("https://api.coinmarketcap.com/v1/ticker/?limit=0")
@@ -18,9 +19,9 @@ print currentPrices
 #print type (all_coins_data)
 #print all_coins_data[0]
 #json_obj_array= all_coins_data.json
-x=db.allTimeData.find({},{"athigh_usd":1})
-for doc in x:
-	print doc['_id'], doc['athigh_usd']
+#x=db.allTimeData.find({},{"athigh_usd":1})
+#for doc in x:
+#	print doc['_id'], doc['athigh_usd']
 """x = '''
     {
         "id": "bitcoin", 
