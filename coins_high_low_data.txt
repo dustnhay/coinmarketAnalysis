@@ -1,7 +1,7 @@
 bitcoin 0.00
 ethereum 0.00
 bitcoin-cash 0.00
-iota 0.00
+iota 5.55 00.14 .00044982 .000044690
 ripple 0.00
 litecoin 0.00
 dash 0.00

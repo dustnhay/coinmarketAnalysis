@@ -8,7 +8,7 @@ db = client.mountain
 currentPrices = {}
 all_coins_data = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=600").json()
 for item in all_coins_data:
-		print item["id"], "0.00"
+		print item["id"]+, item["id"],item["id"]
 		#currentPrices[item["id"]]=item["price_usd"]
 #print currentPrices
 
