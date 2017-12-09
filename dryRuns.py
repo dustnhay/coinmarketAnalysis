@@ -1,14 +1,26 @@
 #http://tiborsimko.org/postgresql-mongodb-json-select-speed.html
-
+#"athigh_usd":"15971.00",
+#"id": "bitcoin", 
 import requests
 import json
 from pymongo import MongoClient
 client = MongoClient("mongodb://germ:blueelephant@ds127126.mlab.com:27126/mountain")
 db = client.mountain
 currentPrices = {}
-all_coins_data = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=600").json()
+all_coins_data = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=0").json()
 for item in all_coins_data:
-		print item["id"]+, item["id"],item["id"]
+ print "\t{"
+ print '\t"id" : "'+item["id"]+'",'
+ print '\t"name" : "'+item["name"]+'",'
+ print '\t"rank" : "'+item["rank"]+'",'
+ print '\t"ATHigh_usd" : "'+item["price_usd"]+'",'
+ print '\t"ATHigh_btc" : "0.00000000",'
+ print '\t"ATHigh_btc_epoc" : "",'
+ print '\t"ATLow_usd" : "0.00",'
+ print '\t"ATLow_btc" : "0.00000000",'
+ print '\t"ATLow_btc_epoc" : "",'
+ print '\t},'
+		#+, item["id"],item["id"]
 		#currentPrices[item["id"]]=item["price_usd"]
 #print currentPrices
 

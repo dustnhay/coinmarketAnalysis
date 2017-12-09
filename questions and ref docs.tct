@@ -1,0 +1,6 @@
+Q)How to make a read only mongo collection. Need to hav a collection for critical data like ATH ATL collection.
+
+Q)How to better make the data model of the api dumps for future data analytics.
+have a collection for each and every coin. or make a document for every day. on the next day a new document is created and all the files gets dumped there.
+
+
